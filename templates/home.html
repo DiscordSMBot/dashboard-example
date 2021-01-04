@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+	</head>
+    <body>
+        <p class="Welcome">Welcome back, {{ username }}!</p>
+        <img src="/static/middle.png" class="middle">
+        <img src="/static/top.png" class="top">
+        <img src="/static/left.png" class="left">
+        <h2>Home Page</h2>
+        <p class="Welcome">Welcome back, {{ username }}!</p>
+        <p class="Dashboard">Your dashboard</p>
+        <div class="Rectangle"></div>
+        <div class="Rec2"></div>
+        <div class=""></div>
+        <p class="Disc">Discord Account</p>
+        <p class="Veri"> {{ discstat }} </p>
+        <img src="/static/Discordlogo.png" class="disclogo">
+
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+    <body>
+        <img src="/static/middle.png" class="middle">
+        <img src="/static/top.png" class="top">
+        <img src="/static/left.png" class="left">
+        {% block content %}{% endblock %}
+	</body>
+</html>
